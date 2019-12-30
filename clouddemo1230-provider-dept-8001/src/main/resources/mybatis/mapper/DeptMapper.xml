@@ -11,9 +11,9 @@
 		select deptno,dname,db_source from dept;
 	</select>
 	<insert id="addDept" parameterType="Dept">
-		INSERT INTO dept(dname,db_source) VALUES(#{deptno},#{dname},DATABASE());
+		INSERT INTO dept(deptno,dname,db_source) VALUES(#{deptno},#{dname},DATABASE());
 	</insert>
-	<select id = "getMaxDno" resultType="Integer">
+	<select id = "getMaxDno" resultType="Long">
 		select deptno from dept order by deptno desc limit 1
 	</select>
 

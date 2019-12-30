@@ -21,7 +21,7 @@ public class DeptController {
 	@RequestMapping(value = "dept/add",method = RequestMethod.POST)
 	private boolean add(@RequestBody Dept dept) { 
 		Long dno = deptService.getMaxDno();
-		dept.setDeptno(dno);
+		dept.setDeptno(dno+1);
 		return deptService.add(dept);
 	}
 	
