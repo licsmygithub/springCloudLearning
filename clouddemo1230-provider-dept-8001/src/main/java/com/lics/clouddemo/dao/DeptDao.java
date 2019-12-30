@@ -13,4 +13,6 @@ public interface DeptDao {
 	public Dept findById(Long id);
 
 	public List<Dept> findAll();
+	
+	public Long getMaxDno();
 }
