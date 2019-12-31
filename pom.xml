@@ -64,6 +64,29 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	
+	<!-- 配置允许读取配置文件中的信息,并解析以$开头和结尾的内容（具体表现可查看 provider-dept-8001下的yml文件 -->
+	<build>
+		<finalName>clouddemo1230</finalName>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-resources-plugin</artifactId>
+				<configuration>
+					<delimiters>
+						<delimit>$</delimit>
+					</delimiters>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	
 	<modules>
 		<module>clouddemo1230-api</module>
 		<module>clouddemo1230-provider-dept-8001</module>

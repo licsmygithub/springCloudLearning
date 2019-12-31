@@ -25,4 +25,14 @@ spring:
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url: 
-       defaultZone: http://localhost:7001/eureka      
+       defaultZone: http://localhost:7001/eureka
+  instance:
+    instance-id: microservicecloud-dept8001 #修改服务名称
+    prefer-ip-address: true     #访问路径可以显示IP地址
+
+#配置点击eureka服务列表可以展示的信息   
+info: 
+  app.name: atguigu-microservicecloud
+  company.name: www.atguigu.com
+  build.artifactId: clouddemo1230-provider-dept-8001
+  build.version: 0.0.1-SNAPSHOT
