@@ -67,5 +67,6 @@
 	<modules>
 		<module>clouddemo1230-api</module>
 		<module>clouddemo1230-provider-dept-8001</module>
+		<module>clouddemo1231-eureka-7001</module>
 	</modules>
 </project>
