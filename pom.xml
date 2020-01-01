@@ -93,5 +93,7 @@
 		<module>clouddemo1231-eureka-7001</module>
 		<module>clouddemo1231-eureka-7002</module>
 		<module>clouddemo1231-eureka-7003</module>
+		<module>clouddemo1230-provider-dept-8002</module>
+		<module>clouddemo1230-provider-dept-8003</module>
 	</modules>
 </project>
