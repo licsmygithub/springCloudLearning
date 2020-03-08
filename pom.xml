@@ -95,5 +95,6 @@
 		<module>clouddemo1231-eureka-7003</module>
 		<module>clouddemo1230-provider-dept-8002</module>
 		<module>clouddemo1230-provider-dept-8003</module>
+		<module>clouddemo1230-consumer-dept-feign</module>
 	</modules>
 </project>
